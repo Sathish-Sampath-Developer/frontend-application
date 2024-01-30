@@ -1,0 +1,40 @@
+.form-container {
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.form-content {
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 40px 0 30px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 740px) {
+  .form-container {
+    margin: 0 auto -236px;
+    max-width: 430px;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .form-container:before {
+    content: "";
+    display: block;
+    height: 35px;
+  }
+
+  .form-container:after {
+    content: "";
+    display: block;
+    height: 236px;
+  }
+
+  .form-content {
+    margin-bottom: 90px;
+    padding:40px 20px;
+  }
+}
